@@ -7,7 +7,12 @@ class TabsContainer extends React.Component {
 
     render() {
         return (
-            <span>{props.tabTitle}</span>
+            <div>
+                <span>{ this.props.title }</span>
+                <div dangerouslySetInnerHTML={{__html: [this.props.content]}}></div>
+            </div>
         )
     }
 }
+
+export default TabsContainer

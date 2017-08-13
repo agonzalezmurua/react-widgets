@@ -5,7 +5,7 @@ const config = {
   entry: './main.js',
   output: {
     path: __dirname,
-    filename: 'bundle.js'
+    filename: './dist/bundle.js'
   },
   module: {
     loaders: [
@@ -14,7 +14,8 @@ const config = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          "presets" : ["es2015", "react"]
+          "presets" : ["es2015", "react"],
+          "plugins" : ["react-hot-loader/babel"]
         }
       }
     ]
