@@ -1,20 +1,25 @@
 <html lang="en">
 <head>
+    <script src="./react-tabs.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./default-theme.css">
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>React Tabs Demo</title>
 </head>
 <body>
     <div class="react-tab">
-        <div tabs-title="hello">
+        <div tabs-title="howdy">
             <p>Lorem ipsum</p>
         </div>
-        <div tabs-title="hello">
-            <p>Lorem ipsum</p>
+        <div tabs-title="nice">
+            <p>Dolor sit</p>
         </div>
-        <div tabs-title="hello">
-            <p>Lorem ipsum</p>
+        <div tabs-title="nice meme">
         </div>
     </div>
-    <script src="./bundle.js" type="text/javascript"></script>
+
+    <script>
+        // Document Ready function, you can also use jQuery or any alternative that you like
+        window.onload =  ReactTabs()
+    </script>
 </body>
 </html>

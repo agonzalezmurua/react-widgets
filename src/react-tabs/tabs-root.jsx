@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-// Importing React component
-import TabsWrapper from './react-tabs/tabs-wrapper.jsx'
+import TabsWrapper from './tabs-wrapper.jsx'
 
 // Base function and parameter initialization for each doc element containing the react-tab class
 function ReactTabs() {
@@ -9,9 +8,11 @@ function ReactTabs() {
     const containers = document.getElementsByClassName('react-tab')
     if (containers.length != 0) {
         Array.from(containers).forEach( (TabRoot) => {
-            const container = TabRoot.cloneNode(true)
+            // Copy of the content of the container
+            const fatherContainer = TabRoot.cloneNode(true)
+            // Initialization of the component
             ReactDOM.render(
-                <TabsWrapper container={ container }/>
+                <TabsWrapper fatherContainer={ fatherContainer }/>
                 , TabRoot
             )
         });

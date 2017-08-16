@@ -2,10 +2,10 @@ const webpack = require('webpack')
 const path = require('path')
 
 const config = {
-  entry: './main.js',
+  entry: './src/react-tabs.js',
   output: {
     path: __dirname,
-    filename: './dist/bundle.js'
+    filename: './dist/react-tabs.js'
   },
   module: {
     loaders: [
