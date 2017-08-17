@@ -12,7 +12,7 @@ function ReactTabs() {
             const fatherContainer = TabRoot.cloneNode(true)
             // Initialization of the component
             ReactDOM.render(
-                <TabsWrapper fatherContainer={ fatherContainer }/>
+                <TabsWrapper title = {fatherContainer.attributes['title'].nodeValue} fatherContainer = {fatherContainer}/>
                 , TabRoot
             )
         });

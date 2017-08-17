@@ -8,9 +8,9 @@ class TabsNavButton extends React.Component {
     render() {
         // If not title is given then it renders the index instead
         return (
-            <a className="tabs-nav-elem" onClick = {() => { this.props.clicked(this.props.index)}}>
+            <div className="tabs-nav-elem" onClick = {() => { this.props.clicked(this.props.index)}}>
                 <span className="tabs-nav-text">{this.props.title ? this.props.title : this.props.index}</span>
-            </a>
+            </div>
         )
     }
 }

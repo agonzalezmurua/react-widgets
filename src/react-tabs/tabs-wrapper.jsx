@@ -39,7 +39,8 @@ class TabsWrapper extends React.Component {
     render() {
         return (
             <div className="tabs-wrapper">
-                <div className="tabs-nav-wrapper"v>
+                <div className="tabs-title"><span>{this.props.title}</span></div>
+                <div className="tabs-nav-wrapper">
                     {this.state.navButtons}
                 </div>
                 {this.state.containers[this.state.indexOfActiveTab]}
